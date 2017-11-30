@@ -1,0 +1,8 @@
+{
+  "name": "webpack-build",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/komseki/webpack-build.git",
+  "author": "komseki <komseki@gmail.com>",
+  "license": "MIT"
+}

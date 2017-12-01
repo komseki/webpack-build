@@ -1,3 +1,3 @@
 webpack-build
 
-[]defineplugin](../plugin.md#defineplugin)
+[defineplugin](../plugin.md#defineplugin)

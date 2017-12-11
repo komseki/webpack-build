@@ -1,46 +1,7 @@
-
-### **DefinePlugin**
-DefinePlugin을 사용하면 컴파일 타임에 구성 할 수있는 전역 상수를 만들 수 있습니다. 이는 개발 빌드와 릴리스 빌드간에 서로 다른 동작을 허용 할 때 유용 할 수 있습니다. 개발 빌드에서는 로깅을 수행하지만 릴리스 빌드에서는 로깅을 수행하지 않으면 로깅의 발생 여부를 결정하기 위해 전역 상수를 사용할 수 있습니다.
-
-``` javascript
-new webpack.DefinePlugin({
-  // Definitions...
-})
-```
-[https://webpack.js.org/plugins/define-plugin/](https://webpack.js.org/plugins/define-plugin/)
-
-
-----------
-
-
-### **NoEmitOnErrorsPlugin**
-컴파일하는 동안 오류가 발생할 때마다 NoEmitOnErrorsPlugin을 사용하여 emitting 단계를 건너 뜁니다. 이렇게하면 오류가 포함 된 애셋이 생성되지 않습니다. stats에서 `emitted` 플래그는 모든 에셋에 대해 `false`입니다.
-
-``` javascript
-new webpack.NoEmitOnErrorsPlugin()
-```
-[https://webpack.js.org/plugins/no-emit-on-errors-plugin/](https://webpack.js.org/plugins/no-emit-on-errors-plugin/)
-
-
-----------
-
-
-### **HotModuleReplacementPlugin**
-HMR로 알려진 Hot Module Replacement를 활성화 시킵니다.
-HMR을 사용하는 것은 쉽고 대부분의 경우 옵션이 필요하지 않습니다.
-
-``` javascript
-new webpack.HotModuleReplacementPlugin({
-  // Options...
-})
-```
-[https://webpack.js.org/plugins/hot-module-replacement-plugin/](https://webpack.js.org/plugins/hot-module-replacement-plugin/)
-
-
-----------
-
-
 ### **HtmlWebpackPlugin**
+
+----------
+
 HtmlWebpackPlugin은 웹팩 번들을 제공하기 위해 HTML 파일 생성을 단순화합니다. 이는 컴파일 할 때마다 변경되는 파일 이름에 해시가 포함 된 webpack 번들에 특히 유용합니다. 플러그인에서 HTML 파일을 생성하거나, lodash 템플릿을 사용하여 템플릿을 제공하거나, 자체 로더를 사용할 수 있습니다.
 
 #### **install**
@@ -226,9 +187,3 @@ plugins: [
 
 [https://github.com/jantimon/html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 [https://webpack.js.org/plugins/html-webpack-plugin/](https://github.com/jantimon/html-webpack-plugin#html-webpack-plugin)
-
-
-----------
-
-
-### **Friendly-errors-webpack-plugin**

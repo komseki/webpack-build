@@ -1,9 +1,19 @@
-webpack-build
+### **npm script**
+* dev
+* build
+
+
+|                 | dev         | build         |
+|:----------------|:------------|:--------------| 
+| NODE_ENV        | development | production    |
+
+
+
 
 ### **Plugins** 
 
-* [DefinePlugin](./doc/plugin.md#defineplugin)
-* [NoEmitOnErrorsPlugin](./doc/plugin.md#noemitonerrorsplugin)
-* [HotModuleReplacementPlugin](./doc/plugin.md#hotmodulereplacementplugin)
-* [HtmlWebpackPlugin](./doc/plugin.md#htmlwebpackplugin)
-* [Friendly-errors-webpack-plugin](./doc/plugin.md#friendly-errors-webpack-plugin)
+* [DefinePlugin](doc/plugins/plugin.md#defineplugin)
+* [NoEmitOnErrorsPlugin](doc/plugins/plugin.md#noemitonerrorsplugin)
+* [HotModuleReplacementPlugin](doc/plugins/plugin.md#hotmodulereplacementplugin)
+* [HtmlWebpackPlugin](./doc/plugins/HtmlWebpackPlugin.md)
+* [Friendly-errors-webpack-plugin](doc/plugins/plugin.md#friendly-errors-webpack-plugin)

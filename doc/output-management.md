@@ -6,7 +6,7 @@
 기존 프로젝트를 수정합니다.
 
 **project**
-```javascript
+```log
   |- package.json
   |- webpack.config.js
   |- /dist

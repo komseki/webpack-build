@@ -1,6 +1,9 @@
+/**
+ *
+ */
 const path = require('path');
 const webpack = require('webpack');
-const ExtratTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // 프로젝트 루트 경로로 사용할 수 있게 한다.
 const _resolve= (p='') => path.resolve( __dirname, '..', p );
@@ -19,30 +22,21 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use : ExtratTextPlugin.extract([
+                use: [
                     'style-loader',
                     'css-loader'
-                ])
-                /*use: [
-                    'style-loader',
-                    'css-loader'
-                ]*/
+                ]
             },
             {
                 test: /\.scss$/,
-                use: ExtratTextPlugin.extract([
+                use: [
                     'style-loader',
                     'css-loader',
                     'sass-loader'
-                ])
-                /*use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
-                ]*/
+                ]
             },
             {
-                test: /\.js$/,
+                test: /\.js$|\.html$/,
                 loader: 'babel-loader'
             },
             {
@@ -62,6 +56,7 @@ module.exports = {
                     name : '[name].[hash:8].[ext]'
                 }
             },
+
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
                 loader: 'url-loader',
